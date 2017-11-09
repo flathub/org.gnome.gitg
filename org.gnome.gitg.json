@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.gitg",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.24",
+    "runtime-version": "3.26",
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "command": "gitg",
@@ -43,8 +43,8 @@
         "sources": [
             {
                 "type": "archive",
-                "url": "https://www.libssh2.org/download/libssh2-1.7.0.tar.gz",
-                "sha256": "e4561fd43a50539a8c2ceb37841691baf03ecb7daf043766da1b112e4280d584"
+                "url": "https://www.libssh2.org/download/libssh2-1.8.0.tar.gz",
+                "sha256": "39f34e2f6835f4b992cafe8625073a88e5a28ba78f83e8099610a7b3af4676d4"
             }
         ]
       },
@@ -56,8 +56,8 @@
         "sources": [
             {
                 "type": "archive",
-                "url": "https://github.com/libgit2/libgit2/archive/v0.25.1.tar.gz",
-                "sha256": "7ae8e699ff7ff9a1fa702249140ee31ea6fd556bf7968e84e38165870667bcb1"
+                "url": "https://github.com/libgit2/libgit2/archive/v0.26.0.tar.gz",
+                "sha256": "6a62393e0ceb37d02fe0d5707713f504e7acac9006ef33da1e88960bd78b6eac"
             }
         ]
       },
@@ -66,8 +66,8 @@
         "sources": [
             {
                 "type": "archive",
-                "url": "https://download.gnome.org/sources/libgit2-glib/0.25/libgit2-glib-0.25.0.tar.xz",
-                "sha256": "4a256b9acfb93ea70d37213a4083e2310e59b05f2c7595242fe3c239327bc565"
+                "url": "https://download.gnome.org/sources/libgit2-glib/0.26/libgit2-glib-0.26.0.tar.xz",
+                "sha256": "06b16cfcc3a53d9804858618d690e5509e9af2e2245b75f0479cadbbe39745c3"
             }
         ]
       },
@@ -77,8 +77,8 @@
         "sources": [
             {
                 "type": "archive",
-                "url": "https://download.gnome.org/sources/libpeas/1.20/libpeas-1.20.0.tar.xz",
-                "sha256": "f392fffe2dc00072a51bb2a1b274224a06bdc5f9c3b3c0ac4816909e9933d354"
+                "url": "https://download.gnome.org/sources/libpeas/1.22/libpeas-1.22.0.tar.xz",
+                "sha256": "5b2fc0f53962b25bca131a5ec0139e6fef8e254481b6e777975f7a1d2702a962"
             }
         ]
       },
@@ -103,8 +103,8 @@
         "sources": [
             {
                 "type": "archive",
-                "url": "http://gtkspell.sourceforge.net/download/gtkspell3-3.0.8.tar.gz",
-                "sha256": "011a0ce3f7c2f4b3a5b8f54c55927cdd73e1abf591a284a6d66cfb4cfe2d3fff"
+                "url": "https://sourceforge.net/projects/gtkspell/files/3.0.9/gtkspell3-3.0.9.tar.xz",
+                "sha256": "a4f4a4a2789f7499563e26d96b22d8085222ebe278da47d026b2de782b8b4d26"
             }
         ]
       },
@@ -113,8 +113,8 @@
         "sources": [
             {
                 "type": "archive",
-                "url": "https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.1.tar.xz",
-                "sha256": "717b6fe884ff9f25158bdc36f463790c608ada9f5e2e6f4dc7f1467c83711c25"
+                "url": "https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.5.tar.xz",
+                "sha256": "0246185fcc20c4734d01419a83f58f251a82e2a902fe60bb0335187fcf658181"
             }
         ]
       },
@@ -123,8 +123,8 @@
         "sources": [
             {
                 "type": "archive",
-                "url": "https://download.gnome.org/sources/gitg/3.23/gitg-3.23.90.tar.xz",
-                "sha256": "afb9903e33796ca5149651569280ce15dd53e7d38722146a91db408b9e426f54"
+                "url": "https://download.gnome.org/sources/gitg/3.26/gitg-3.26.0.tar.xz",
+                "sha256": "26730d437d6a30d6e341b9e8da99d2134dce4b96022c195609f45062f82b54d5"
             }
         ]
       }
