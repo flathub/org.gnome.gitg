@@ -1,0 +1,132 @@
+{
+    "app-id": "org.gnome.gitg",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "3.24",
+    "branch": "stable",
+    "sdk": "org.gnome.Sdk",
+    "command": "gitg",
+    "rename-desktop-file": "gitg.desktop",
+    "rename-icon": "gitg",
+    "tags": [],
+    "finish-args": [
+        /* X11 + XShm access */
+        "--share=ipc", "--socket=x11",
+        /* Wayland access */
+        "--socket=wayland",
+        /* We want full fs access */
+        "--filesystem=host",
+        /* Needed for dconf to work */
+        "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
+        "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
+        /* We need access to auth agents */
+        "--talk-name=org.freedesktop.secrets",
+        "--filesystem=xdg-run/keyring"
+    ],
+    "build-options" : {
+        "cflags": "-O2 -g",
+        "cxxflags": "-O2 -g",
+        "env": {
+            "V": "1"
+        }
+    },
+    "cleanup": ["/include", "/lib/pkgconfig",
+                "/share/pkgconfig", "/share/aclocal",
+                "/man", "/share/man", "/share/gtk-doc",
+                "/share/vala",
+                "*.la", "*.a"],
+    "modules": [
+      {
+        "name": "libssh2",
+        "buildsystem": "cmake",
+        "config-opts": [ "-DCMAKE_INSTALL_LIBDIR:PATH=/app/lib",
+                         "-DBUILD_SHARED_LIBS:BOOL=ON" ],
+        "sources": [
+            {
+                "type": "archive",
+                "url": "https://www.libssh2.org/download/libssh2-1.7.0.tar.gz",
+                "sha256": "e4561fd43a50539a8c2ceb37841691baf03ecb7daf043766da1b112e4280d584"
+            }
+        ]
+      },
+      {
+        "name": "libgit2",
+        "buildsystem": "cmake",
+        "config-opts": [ "-DBUILD_SHARED_LIBS:BOOL=ON",
+                         "-DTHREADSAFE=ON" ],
+        "sources": [
+            {
+                "type": "archive",
+                "url": "https://github.com/libgit2/libgit2/archive/v0.25.1.tar.gz",
+                "sha256": "7ae8e699ff7ff9a1fa702249140ee31ea6fd556bf7968e84e38165870667bcb1"
+            }
+        ]
+      },
+      {
+        "name": "libgit2-glib",
+        "sources": [
+            {
+                "type": "archive",
+                "url": "https://download.gnome.org/sources/libgit2-glib/0.25/libgit2-glib-0.25.0.tar.xz",
+                "sha256": "4a256b9acfb93ea70d37213a4083e2310e59b05f2c7595242fe3c239327bc565"
+            }
+        ]
+      },
+      {
+        "name": "libpeas",
+        "cleanup": [ "/bin/*", "/lib/peas-demo" ],
+        "sources": [
+            {
+                "type": "archive",
+                "url": "https://download.gnome.org/sources/libpeas/1.20/libpeas-1.20.0.tar.xz",
+                "sha256": "f392fffe2dc00072a51bb2a1b274224a06bdc5f9c3b3c0ac4816909e9933d354"
+            }
+        ]
+      },
+      {
+        "name": "libgee",
+        "build-options" : {
+            "env": {
+                "PKG_CONFIG_GOBJECT_INTROSPECTION_1_0_GIRDIR": "/app/share/gir-1.0",
+                "PKG_CONFIG_GOBJECT_INTROSPECTION_1_0_TYPELIBDIR": "/app/lib/girepository-1.0"
+            }
+        },
+        "sources": [
+            {
+                "type": "archive",
+                "url": "https://download.gnome.org/sources/libgee/0.20/libgee-0.20.0.tar.xz",
+                "sha256": "21308ba3ed77646dda2e724c0e8d5a2f8d101fb05e078975a532d7887223c2bb"
+            }
+        ]
+      },
+      {
+        "name": "gtkspell3",
+        "sources": [
+            {
+                "type": "archive",
+                "url": "http://gtkspell.sourceforge.net/download/gtkspell3-3.0.8.tar.gz",
+                "sha256": "011a0ce3f7c2f4b3a5b8f54c55927cdd73e1abf591a284a6d66cfb4cfe2d3fff"
+            }
+        ]
+      },
+      {
+        "name": "gtksourceview",
+        "sources": [
+            {
+                "type": "archive",
+                "url": "https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.1.tar.xz",
+                "sha256": "717b6fe884ff9f25158bdc36f463790c608ada9f5e2e6f4dc7f1467c83711c25"
+            }
+        ]
+      },
+      {
+        "name": "gitg",
+        "sources": [
+            {
+                "type": "archive",
+                "url": "https://download.gnome.org/sources/gitg/3.23/gitg-3.23.90.tar.xz",
+                "sha256": "afb9903e33796ca5149651569280ce15dd53e7d38722146a91db408b9e426f54"
+            }
+        ]
+      }
+    ]
+}
