@@ -8,6 +8,7 @@
     "rename-desktop-file": "gitg.desktop",
     "rename-appdata-file": "gitg.appdata.xml",
     "rename-icon": "gitg",
+    "copy-icon": true,
     "tags": [],
     "finish-args": [
         /* X11 + XShm access */
