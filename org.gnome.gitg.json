@@ -15,6 +15,8 @@
         "--share=ipc", "--socket=x11",
         /* Wayland access */
         "--socket=wayland",
+        /* Required for cloning repositories */
+        "--share=network",
         /* We want full fs access */
         "--filesystem=host",
         /* Needed for dconf to work */
