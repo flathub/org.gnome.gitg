@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.gitg",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.26",
+    "runtime-version": "3.30",
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "command": "gitg",
@@ -67,11 +67,16 @@
       },
       {
         "name": "libgit2-glib",
+        "config-opts" : [
+            "--buildtype=debugoptimized"
+        ],
+        "buildsystem" : "meson",
+        "builddir" : true,
         "sources": [
             {
-                "type": "archive",
-                "url": "https://download.gnome.org/sources/libgit2-glib/0.26/libgit2-glib-0.26.0.tar.xz",
-                "sha256": "06b16cfcc3a53d9804858618d690e5509e9af2e2245b75f0479cadbbe39745c3"
+                "type": "git",
+                "url": "https://gitlab.gnome.org/GNOME/libgit2-glib.git",
+                "commit": "3868a4b97b72cdd4bc44e311227294c10c79d0de"
             }
         ]
       },
@@ -89,16 +94,29 @@
       {
         "name": "libgee",
         "build-options" : {
-            "env": {
-                "PKG_CONFIG_GOBJECT_INTROSPECTION_1_0_GIRDIR": "/app/share/gir-1.0",
-                "PKG_CONFIG_GOBJECT_INTROSPECTION_1_0_TYPELIBDIR": "/app/lib/girepository-1.0"
-            }
+            "make-install-args" : [
+                "girdir=/app/share/gir-1.0",
+                "typelibdir=/app/lib/girepository-1.0"
+            ]
         },
         "sources": [
             {
                 "type": "archive",
                 "url": "https://download.gnome.org/sources/libgee/0.20/libgee-0.20.0.tar.xz",
                 "sha256": "21308ba3ed77646dda2e724c0e8d5a2f8d101fb05e078975a532d7887223c2bb"
+            }
+        ]
+      },
+      {
+        "name": "enchant",
+        "cleanup": [
+            "/bin"
+        ],
+        "sources": [
+            {
+                "type": "archive",
+                "url": "https://github.com/AbiWord/enchant/releases/download/enchant-1-6-1/enchant-1.6.1.tar.gz",
+                "sha256": "bef0d9c0fef2e4e8746956b68e4d6c6641f6b85bd2908d91731efb68eba9e3f5"
             }
         ]
       },
@@ -124,11 +142,16 @@
       },
       {
         "name": "gitg",
+        "buildsystem" : "meson",
+        "config-opts" : [
+            "--buildtype=debugoptimized",
+            "-Ddeprecations=true"
+        ],
         "sources": [
             {
                 "type": "archive",
-                "url": "https://download.gnome.org/sources/gitg/3.26/gitg-3.26.0.tar.xz",
-                "sha256": "26730d437d6a30d6e341b9e8da99d2134dce4b96022c195609f45062f82b54d5"
+                "url": "https://download.gnome.org/sources/gitg/3.30/gitg-3.30.0.tar.xz",
+                "sha256": "a710ae86fbd62124560ebeae0299f158662f7b31ab646c4dd09d8a03c8570a97"
             }
         ]
       }
