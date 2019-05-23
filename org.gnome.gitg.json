@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.gitg",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.30",
+    "runtime-version": "3.32",
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "command": "gitg",
@@ -45,8 +45,8 @@
         "sources": [
             {
                 "type": "archive",
-                "url": "https://www.libssh2.org/download/libssh2-1.8.0.tar.gz",
-                "sha256": "39f34e2f6835f4b992cafe8625073a88e5a28ba78f83e8099610a7b3af4676d4"
+                "url": "https://www.libssh2.org/download/libssh2-1.8.2.tar.gz",
+                "sha256": "088307d9f6b6c4b8c13f34602e8ff65d21c2dc4d55284dfe15d502c4ee190d67"
             }
         ]
       },
@@ -58,8 +58,8 @@
         "sources": [
             {
                 "type": "archive",
-                "url": "https://github.com/libgit2/libgit2/archive/v0.26.0.tar.gz",
-                "sha256": "6a62393e0ceb37d02fe0d5707713f504e7acac9006ef33da1e88960bd78b6eac"
+                "url": "https://github.com/libgit2/libgit2/archive/v0.27.8.tar.gz",
+                "sha256": "8313873d49dc01e8b880ec334d7430ae67496a89aaa8c6e7bbd3affb47a00c76"
             }
         ]
       },
@@ -74,7 +74,7 @@
             {
                 "type": "git",
                 "url": "https://gitlab.gnome.org/GNOME/libgit2-glib.git",
-                "commit": "3868a4b97b72cdd4bc44e311227294c10c79d0de"
+                "commit": "60c461a7be3f63693dd1126303a0175c4af2ad1b"
             }
         ]
       },
@@ -100,8 +100,8 @@
         "sources": [
             {
                 "type": "archive",
-                "url": "https://download.gnome.org/sources/libgee/0.20/libgee-0.20.0.tar.xz",
-                "sha256": "21308ba3ed77646dda2e724c0e8d5a2f8d101fb05e078975a532d7887223c2bb"
+                "url": "https://download.gnome.org/sources/libgee/0.20/libgee-0.20.1.tar.xz",
+                "sha256": "bb2802d29a518e8c6d2992884691f06ccfcc25792a5686178575c7111fea4630"
             }
         ]
       },
@@ -133,8 +133,8 @@
         "sources": [
             {
                 "type": "archive",
-                "url": "https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.5.tar.xz",
-                "sha256": "0246185fcc20c4734d01419a83f58f251a82e2a902fe60bb0335187fcf658181"
+                "url": "https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz",
+                "sha256": "691b074a37b2a307f7f48edc5b8c7afa7301709be56378ccf9cc9735909077fd"
             }
         ]
       },
@@ -148,8 +148,8 @@
         "sources": [
             {
                 "type": "archive",
-                "url": "https://download.gnome.org/sources/gitg/3.30/gitg-3.30.0.tar.xz",
-                "sha256": "a710ae86fbd62124560ebeae0299f158662f7b31ab646c4dd09d8a03c8570a97"
+                "url": "https://download.gnome.org/sources/gitg/3.32/gitg-3.32.0.tar.xz",
+                "sha256": "01d9b5ac385b383f3060c5d0b8c6cd7ef6b4d6bf13a2911c385c2800d7d9faf3"
             }
         ]
       }
