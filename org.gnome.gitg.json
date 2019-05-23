@@ -5,16 +5,14 @@
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "command": "gitg",
-    "rename-desktop-file": "gitg.desktop",
-    "rename-appdata-file": "gitg.appdata.xml",
-    "rename-icon": "gitg",
-    "copy-icon": true,
     "tags": [],
     "finish-args": [
         /* X11 + XShm access */
         "--share=ipc", "--socket=x11",
         /* Wayland access */
         "--socket=wayland",
+        /* Required fot push action */        
+        "--socket=ssh-auth",
         /* Required for cloning repositories */
         "--share=network",
         /* We want full fs access */
