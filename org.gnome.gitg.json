@@ -139,6 +139,20 @@
         ]
       },
       {
+        "name": "libdazzle",
+        "config-opts": ["--libdir=/app/lib", "--buildtype=debugoptimized"],
+        "buildsystem": "meson",
+        "builddir": true,
+        "cleanup": ["/bin"],
+        "sources": [
+          {
+            "type": "git",
+            "url": "https://gitlab.gnome.org/GNOME/libdazzle.git",
+            "commit": "43a8284ec1ccf626dcedfe748f43e65ad051cb66"
+          }
+        ]
+      },  
+      {
         "name": "gitg",
         "buildsystem" : "meson",
         "config-opts" : [
