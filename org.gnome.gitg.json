@@ -122,9 +122,8 @@
       },
       {
         "name": "libdazzle",
-        "config-opts": ["--libdir=/app/lib", "--buildtype=debugoptimized"],
+        "config-opts": ["--buildtype=debugoptimized"],
         "buildsystem": "meson",
-        "builddir": true,
         "cleanup": ["/bin"],
         "sources": [
           {
