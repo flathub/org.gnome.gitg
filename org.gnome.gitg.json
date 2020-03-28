@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.gitg",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.32",
+    "runtime-version": "3.36",
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "command": "gitg",
@@ -72,7 +72,7 @@
             {
                 "type": "git",
                 "url": "https://gitlab.gnome.org/GNOME/libgit2-glib.git",
-                "commit": "60c461a7be3f63693dd1126303a0175c4af2ad1b"
+                "commit": "8a1da431dcbf4eda612b5189201f502fbf122726"
             }
         ]
       },
