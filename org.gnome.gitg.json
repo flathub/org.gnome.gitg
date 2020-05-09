@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.gitg",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.32",
+    "runtime-version": "3.36",
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "command": "gitg",
@@ -29,22 +29,30 @@
             "V": "1"
         }
     },
-    "cleanup": ["/include", "/lib/pkgconfig",
-                "/share/pkgconfig", "/share/aclocal",
-                "/man", "/share/man", "/share/gtk-doc",
-                "/share/vala",
-                "*.la", "*.a"],
+    "cleanup": [
+        "/include",
+        "/lib/peas-demo",
+        "/lib/pkgconfig",
+        "/man",
+        "/share/aclocal",
+        "/share/gtk-doc",
+        "/share/man",
+        "/share/metainfo",
+        "/share/pkgconfig",
+        "/share/vala",
+        "*.a",
+        "*.la",
+        "*.pyc",
+        "__pycache__"
+    ],
     "modules": [
       {
         "name": "libssh2",
-        "buildsystem": "cmake",
-        "config-opts": [ "-DCMAKE_INSTALL_LIBDIR:PATH=/app/lib",
-                         "-DBUILD_SHARED_LIBS:BOOL=ON" ],
         "sources": [
             {
                 "type": "archive",
-                "url": "https://www.libssh2.org/download/libssh2-1.8.2.tar.gz",
-                "sha256": "088307d9f6b6c4b8c13f34602e8ff65d21c2dc4d55284dfe15d502c4ee190d67"
+                "url": "https://www.libssh2.org/download/libssh2-1.9.0.tar.gz",
+                "sha256": "d5fb8bd563305fd1074dda90bd053fb2d29fc4bce048d182f96eaa466dfadafd"
             }
         ]
       },
@@ -56,8 +64,8 @@
         "sources": [
             {
                 "type": "archive",
-                "url": "https://github.com/libgit2/libgit2/archive/v0.27.8.tar.gz",
-                "sha256": "8313873d49dc01e8b880ec334d7430ae67496a89aaa8c6e7bbd3affb47a00c76"
+                "url": "https://github.com/libgit2/libgit2/releases/download/v1.0.0/libgit2-1.0.0.tar.gz",
+                "sha256": "6a1fa16a7f6335ce8b2630fbdbb5e57c4027929ebc56fcd1ac55edb141b409b4"
             }
         ]
       },
@@ -72,18 +80,34 @@
             {
                 "type": "git",
                 "url": "https://gitlab.gnome.org/GNOME/libgit2-glib.git",
-                "commit": "60c461a7be3f63693dd1126303a0175c4af2ad1b"
+                "commit": "9ee6d9a7317d367e99bbba7c4601205e003173e3",
+                "tag": "v0.99.0.1"
+            }
+        ]
+      },
+      {
+        "name": "intltool",
+        "cleanup": [
+            "*"
+        ],
+        "sources": [
+            {
+                "type": "archive",
+                "url": "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
+                "sha256": "67c74d94196b153b774ab9f89b2fa6c6ba79352407037c8c14d5aeb334e959cd"
             }
         ]
       },
       {
         "name": "libpeas",
         "cleanup": [ "/bin/*", "/lib/peas-demo" ],
+        "buildsystem": "meson",
+        "builddir": true,
         "sources": [
             {
                 "type": "archive",
-                "url": "https://download.gnome.org/sources/libpeas/1.22/libpeas-1.22.0.tar.xz",
-                "sha256": "5b2fc0f53962b25bca131a5ec0139e6fef8e254481b6e777975f7a1d2702a962"
+                "url": "https://download.gnome.org/sources/libpeas/1.26/libpeas-1.26.0.tar.xz",
+                "sha256": "a976d77e20496479a8e955e6a38fb0e5c5de89cf64d9f44e75c2213ee14f7376"
             }
         ]
       },
@@ -95,8 +119,8 @@
         "sources": [
             {
                 "type": "archive",
-                "url": "https://github.com/AbiWord/enchant/releases/download/enchant-1-6-1/enchant-1.6.1.tar.gz",
-                "sha256": "bef0d9c0fef2e4e8746956b68e4d6c6641f6b85bd2908d91731efb68eba9e3f5"
+                "url": "https://github.com/AbiWord/enchant/releases/download/v2.2.8/enchant-2.2.8.tar.gz",
+                "sha256": "c7b5e2853f0dd0b1aafea2f9e071941affeec3a76df8e3f6d67a718c89293555"
             }
         ]
       },
@@ -105,13 +129,13 @@
         "sources": [
             {
                 "type": "archive",
-                "url": "https://sourceforge.net/projects/gtkspell/files/3.0.9/gtkspell3-3.0.9.tar.xz",
-                "sha256": "a4f4a4a2789f7499563e26d96b22d8085222ebe278da47d026b2de782b8b4d26"
+                "url": "https://sourceforge.net/projects/gtkspell/files/3.0.10/gtkspell3-3.0.10.tar.xz",
+                "sha256": "b040f63836b347eb344f5542443dc254621805072f7141d49c067ecb5a375732"
             }
         ]
       },
       {
-        "name": "gtksourceview",
+        "name": "gtksourceview3",
         "sources": [
             {
                 "type": "archive",
@@ -129,13 +153,17 @@
           {
             "type": "git",
             "url": "https://gitlab.gnome.org/GNOME/libdazzle.git",
-            "commit": "43a8284ec1ccf626dcedfe748f43e65ad051cb66"
+            "commit": "2f4d35523c61121eac0459e01b1510e46fe7f2c8",
+            "tag": "3.36.0"
           }
         ]
       },  
       {
         "name": "gitg",
         "buildsystem" : "meson",
+        "cleanup": [
+            "/bin/python"
+        ],
         "config-opts" : [
             "--buildtype=debugoptimized",
             "-Ddeprecations=true"
@@ -149,6 +177,12 @@
             {
                 "type": "patch",
                 "path": "appdata.patch"
+            },
+            {
+                "type": "shell",
+                "commands": [
+                    "ln -s /usr/bin/python3 /app/bin/python"
+                ]
             }
         ]
       }
