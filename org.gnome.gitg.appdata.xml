@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+    <id>org.gnome.gitg</id>
+    <name>gitg</name>
+    <summary>gui for git</summary>
+    <metadata_license>GPL-2.0-or-later</metadata_license>
+    <description>
+      <p>gitg is a graphical user interface for git. It aims at being a small,
+      fast and convenient tool to visualize the history of git repositories.
+      Besides visualization, gitg also provides several utilities to manage your
+      repository and commit your work.</p>
+    </description>
+    <launchable type="desktop-id">org.gnome.gitg.desktop</launchable>
+</component>
