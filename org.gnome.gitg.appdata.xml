@@ -3,7 +3,7 @@
     <id>org.gnome.gitg</id>
     <name>gitg</name>
     <summary>gui for git</summary>
-    <metadata_license>GPL-2.0-or-later</metadata_license>
+    <metadata_license>GPL-2.0</metadata_license>
     <description>
       <p>gitg is a graphical user interface for git. It aims at being a small,
       fast and convenient tool to visualize the history of git repositories.
@@ -11,4 +11,17 @@
       repository and commit your work.</p>
     </description>
     <launchable type="desktop-id">org.gnome.gitg.desktop</launchable>
+    <url type="homepage">https://wiki.gnome.org/Apps/Gitg</url>
+    <url type="donation">https://www.gnome.org/friends/</url>
+    <url type="bugtracker">https://gitlab.gnome.org/GNOME/gitg/issues</url>
+    <url type="translate">https://wiki.gnome.org/TranslationProject</url>
+    <screenshots>
+        <screenshot type="default">https://wiki.gnome.org/Apps/Gitg?action=AttachFile&amp;do=get&amp;target=files-view.png</screenshot>
+        <screenshot type="default">https://wiki.gnome.org/Apps/Gitg?action=AttachFile&amp;do=get&amp;target=stage.png</screenshot>
+        <screenshot type="default">https://wiki.gnome.org/Apps/Gitg?action=AttachFile&amp;do=get&amp;target=commit.png</screenshot>
+    </screenshots>
+    <releases>
+        <release date="2019-07-25" version="3.32.1"/>
+    </releases>
+    <content_rating type="oars-1.0" />
 </component>
