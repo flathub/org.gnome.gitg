@@ -4,6 +4,7 @@
     <name>gitg</name>
     <summary>gui for git</summary>
     <metadata_license>GPL-2.0</metadata_license>
+    <project_license>GPL-2.0</project_license>
     <description>
       <p>gitg is a graphical user interface for git. It aims at being a small,
       fast and convenient tool to visualize the history of git repositories.
