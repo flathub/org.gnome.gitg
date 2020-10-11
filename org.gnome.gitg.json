@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.gitg",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.36",
+    "runtime-version": "3.38",
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "command": "gitg",
@@ -64,8 +64,8 @@
         "sources": [
             {
                 "type": "archive",
-                "url": "https://github.com/libgit2/libgit2/releases/download/v1.0.0/libgit2-1.0.0.tar.gz",
-                "sha256": "6a1fa16a7f6335ce8b2630fbdbb5e57c4027929ebc56fcd1ac55edb141b409b4"
+                "url": "https://github.com/libgit2/libgit2/releases/download/v1.0.1/libgit2-1.0.1.tar.gz",
+                "sha256": "689f442c39c4117df515d1a0ffd7b401b91a500d7e2875ac45a440d86f198f5a"
             }
         ]
       },
@@ -85,19 +85,7 @@
             }
         ]
       },
-      {
-        "name": "intltool",
-        "cleanup": [
-            "*"
-        ],
-        "sources": [
-            {
-                "type": "archive",
-                "url": "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
-                "sha256": "67c74d94196b153b774ab9f89b2fa6c6ba79352407037c8c14d5aeb334e959cd"
-            }
-        ]
-      },
+      "shared-modules/intltool/intltool-0.51.json",
       {
         "name": "libpeas",
         "cleanup": [ "/bin/*", "/lib/peas-demo" ],
@@ -153,8 +141,8 @@
           {
             "type": "git",
             "url": "https://gitlab.gnome.org/GNOME/libdazzle.git",
-            "commit": "2f4d35523c61121eac0459e01b1510e46fe7f2c8",
-            "tag": "3.36.0"
+            "commit": "235e1bd36e7c4324557a14690b446dc4b09a3ef3",
+            "tag": "3.38.0"
           }
         ]
       },  
