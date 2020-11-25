@@ -161,7 +161,7 @@
             },
             {
                 "type": "patch",
-                "path": "appdata.patch"
+                "path": "patches/0001-appdata.patch"
             },
             {
                 "type": "shell",
