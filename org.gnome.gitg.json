@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.gitg",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "40",
+    "runtime-version": "41",
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "command": "gitg",
@@ -34,7 +34,6 @@
         "/share/aclocal",
         "/share/gtk-doc",
         "/share/man",
-        "/share/metainfo",
         "/share/pkgconfig",
         "/share/vala",
         "*.a",
@@ -77,8 +76,7 @@
             {
                 "type": "git",
                 "url": "https://gitlab.gnome.org/GNOME/libgit2-glib.git",
-                "commit": "9ee6d9a7317d367e99bbba7c4601205e003173e3",
-                "tag": "v0.99.0.1"
+                "tag": "v1.0.0.1"
             }
         ]
       },
@@ -110,39 +108,42 @@
         ]
       },
       {
-        "name": "gtkspell3",
-        "sources": [
+        "name" : "gspell",
+        "config-opts" : [
+            "--disable-static",
+            "--disable-gtk-doc"
+        ],
+        "sources" : [
             {
-                "type": "archive",
-                "url": "https://sourceforge.net/projects/gtkspell/files/3.0.10/gtkspell3-3.0.10.tar.xz",
-                "sha256": "b040f63836b347eb344f5542443dc254621805072f7141d49c067ecb5a375732"
+                "type" : "archive",
+                "url" : "https://download.gnome.org/sources/gspell/1.8/gspell-1.8.3.tar.xz",
+                "sha256" : "5ae514dd0216be069176accf6d0049d6a01cfa6a50df4bc06be85f7080b62de8"
             }
+        ],
+        "cleanup" : [
+            "/bin"
         ]
       },
       {
-        "name": "gtksourceview3",
-        "sources": [
-            {
-                "type": "archive",
-                "url": "https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz",
-                "sha256": "691b074a37b2a307f7f48edc5b8c7afa7301709be56378ccf9cc9735909077fd"
-            }
-        ]
+         "name": "gtksourceview",
+         "buildsystem": "meson",
+         "sources": [{
+            "type": "archive",
+            "url": "https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.1.tar.xz",
+            "sha256": "d163d71b5fcafbc5b1eec6dd841edbdbcddd3a7511cd5fdcffd86b8bbfe69ac1"
+         }]
       },
       {
         "name": "libdazzle",
-        "config-opts": ["--buildtype=debugoptimized"],
         "buildsystem": "meson",
-        "cleanup": ["/bin"],
         "sources": [
           {
-            "type": "git",
-            "url": "https://gitlab.gnome.org/GNOME/libdazzle.git",
-            "commit": "235e1bd36e7c4324557a14690b446dc4b09a3ef3",
-            "tag": "3.38.0"
+            "type": "archive",
+            "url": "https://download-fallback.gnome.org/sources/libdazzle/3.42/libdazzle-3.42.0.tar.xz",
+            "sha256": "eae67a3b3d9cce408ee9ec0ab6adecb83e52eb53f9bc93713f4df1e84da16925"
           }
         ]
-      },  
+      },
       {
         "name": "gitg",
         "buildsystem" : "meson",
@@ -154,35 +155,18 @@
             "-Ddeprecations=true"
         ],
         "sources": [
-            {
-                "type": "archive",
-                "url": "https://download.gnome.org/sources/gitg/3.32/gitg-3.32.1.tar.xz",
-                "sha256": "24a4aabf8a42aa2e783e1fb5996ebb3c2a82a01b9689269f1329517ef124ef5a"
-            },
-            {
-                "type": "patch",
-                "path": "appdata.patch"
-            },
-            {
-                "type": "shell",
-                "commands": [
-                    "ln -s /usr/bin/python3 /app/bin/python"
-                ]
-            }
+          {
+            "type": "archive",
+            "url": "https://download.gnome.org/sources/gitg/41/gitg-41.tar.xz",
+            "sha256": "7fb61b9fb10fbaa548d23d7065babd72ad63e621de55840c065ce6e3986c4629"
+          },
+          {
+            "type": "shell",
+            "commands": [
+                "ln -s /usr/bin/python3 /app/bin/python"
+            ]
+          }
         ]
-      },
-      {
-          "name": "appdata",
-          "buildsystem": "simple",
-          "build-commands": [
-              "install -Dm644 org.gnome.gitg.appdata.xml /app/share/appdata/org.gnome.gitg.appdata.xml"
-          ],
-          "sources": [
-              {
-                  "type": "file",
-                  "path": "org.gnome.gitg.appdata.xml"
-              }
-          ]
       }
     ]
 }
