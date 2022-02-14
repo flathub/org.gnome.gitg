@@ -161,6 +161,11 @@
             "sha256": "7fb61b9fb10fbaa548d23d7065babd72ad63e621de55840c065ce6e3986c4629"
           },
           {
+            "type": "patch",
+            "path": "Update-release-41-metadata-info.patch",
+            "sha256": "f9207652de02232db87f4beea8ee49869f968dbc2262ace01a90daad68a360db"
+          },
+          {
             "type": "shell",
             "commands": [
                 "ln -s /usr/bin/python3 /app/bin/python"
