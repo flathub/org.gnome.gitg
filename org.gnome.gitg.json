@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.gitg",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "41",
+    "runtime-version": "44",
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "command": "gitg",
@@ -11,7 +11,7 @@
         "--share=ipc", "--socket=x11",
         /* Wayland access */
         "--socket=wayland",
-        /* Required fot push action */        
+        /* Required fot push action */
         "--socket=ssh-auth",
         /* Required for cloning repositories */
         "--share=network",
