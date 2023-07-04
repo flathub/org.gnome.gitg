@@ -21,11 +21,6 @@
         "--talk-name=org.freedesktop.secrets",
         "--filesystem=xdg-run/keyring"
     ],
-    "build-options" : {
-        "env": {
-            "V": "1"
-        }
-    },
     "cleanup": [
         "/include",
         "/lib/peas-demo",
@@ -55,8 +50,7 @@
       {
         "name": "libgit2",
         "buildsystem": "cmake",
-        "config-opts": [ "-DBUILD_SHARED_LIBS:BOOL=ON",
-                         "-DTHREADSAFE=ON" ],
+        "config-opts": [ "-DBUILD_SHARED_LIBS:BOOL=ON", "-DBUILD_TESTS:BOOL=OFF", "-DUSE_THREADS:BOOL=ON"],
         "sources": [
             {
                 "type": "git",
@@ -172,8 +166,11 @@
           },
           {
             "type": "patch",
-            "path": "Update-release-41-metadata-info.patch",
-            "sha256": "f9207652de02232db87f4beea8ee49869f968dbc2262ace01a90daad68a360db"
+            "path": "Update-release-41-metadata-info.patch"
+          },
+          {
+            "type": "patch",
+            "path": "meson-arg-fix.patch"
           },
           {
             "type": "shell",
