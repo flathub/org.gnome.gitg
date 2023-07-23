@@ -11,7 +11,7 @@
         "--share=ipc", "--socket=x11",
         /* Wayland access */
         "--socket=wayland",
-        /* Required fot push action */        
+        /* Required fot push action */
         "--socket=ssh-auth",
         /* Required for cloning repositories */
         "--share=network",
