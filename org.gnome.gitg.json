@@ -21,8 +21,6 @@
     ],
     "cleanup": [
         "/include",
-        "/lib/girepository-1.0",
-        "/lib/peas-demo",
         "/lib/pkgconfig",
         "/man",
         "/share/aclocal",
