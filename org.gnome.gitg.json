@@ -43,7 +43,12 @@
             {
                 "type": "archive",
                 "url": "https://www.libssh2.org/download/libssh2-1.11.0.tar.gz",
-                "sha256": "3736161e41e2693324deb38c26cfdc3efe6209d634ba4258db1cecff6a5ad461"
+                "sha256": "3736161e41e2693324deb38c26cfdc3efe6209d634ba4258db1cecff6a5ad461",
+                "x-checker-data": {
+                    "type": "anitya",
+                    "project-id": 1730,
+                    "url-template": "https://www.libssh2.org/download/libssh2-$version.tar.gz"
+                }
             }
         ]
       },
@@ -57,10 +62,14 @@
         ],
         "sources": [
             {
-                "type": "git",
-                "url": "https://github.com/libgit2/libgit2.git",
-                "tag": "v1.6.4",
-                "commit": "e6325351ceee58cf56f58bdce61b38907805544f"
+                "type": "archive",
+                "url": "https://github.com/libgit2/libgit2/archive/v1.6.4/libgit2-1.6.4.tar.gz",
+                "sha256": "d25866a4ee275a64f65be2d9a663680a5cf1ed87b7ee4c534997562c828e500d",
+                "x-checker-data": {
+                    "type": "anitya",
+                    "project-id": 1627,
+                    "url-template": "https://github.com/libgit2/libgit2/archive/v$version/libgit2-$version.tar.gz"
+                }
             }
         ]
       },
@@ -73,9 +82,13 @@
         "builddir" : true,
         "sources": [
             {
-                "type": "git",
-                "url": "https://gitlab.gnome.org/GNOME/libgit2-glib.git",
-                "tag": "v1.1.0"
+                "type": "archive",
+                "url": "https://download.gnome.org/sources/libgit2-glib/1.1/libgit2-glib-1.1.0.tar.xz",
+                "sha256": "c38dd7575daf8141e1e422333a575faf65f3c9210c08e83e981b88dd41bf1ef3",
+                "x-checker-data": {
+                    "type": "gnome",
+                    "name": "libgit2-glib"
+                }
             }
         ]
       },
@@ -89,7 +102,11 @@
             {
                 "type": "archive",
                 "url": "https://download.gnome.org/sources/libpeas/1.36/libpeas-1.36.0.tar.xz",
-                "sha256": "297cb9c2cccd8e8617623d1a3e8415b4530b8e5a893e3527bbfd1edd13237b4c"
+                "sha256": "297cb9c2cccd8e8617623d1a3e8415b4530b8e5a893e3527bbfd1edd13237b4c",
+                "x-checker-data": {
+                    "type": "gnome",
+                    "name": "libpeas"
+                }
             }
         ]
       },
@@ -102,7 +119,12 @@
             {
                 "type": "archive",
                 "url": "https://github.com/AbiWord/enchant/releases/download/v2.5.0/enchant-2.5.0.tar.gz",
-                "sha256": "149e224cdd2ca825d874639578b6246e07f37d5b8f3970658a377a1ef46f2e15"
+                "sha256": "149e224cdd2ca825d874639578b6246e07f37d5b8f3970658a377a1ef46f2e15",
+                "x-checker-data": {
+                    "type": "anitya",
+                    "project-id": 6601,
+                    "url-template": "https://github.com/AbiWord/enchant/releases/download/v$version/enchant-$version.tar.gz"
+                }
             }
         ]
       },
@@ -115,8 +137,12 @@
         "sources" : [
             {
                 "type" : "archive",
-                "url" : "https://gitlab.gnome.org/GNOME/gspell/-/archive/1.12.1/gspell-1.12.1.tar.gz",
-                "sha256" : "b93b7e97f0552ade3e78f2516fb0259cd6d86c19e18a8a5ee2bf6323e1e5c4f2"
+                "url" : "https://download.gnome.org/sources/gspell/1.12/gspell-1.12.1.tar.xz",
+                "sha256" : "8ec44f32052e896fcdd4926eb814a326e39a5047e251eec7b9056fbd9444b0f1",
+                "x-checker-data": {
+                    "type": "gnome",
+                    "name": "gspell"
+                }
             }
         ],
         "cleanup" : [
@@ -129,8 +155,12 @@
         "sources": [
           {
             "type": "archive",
-            "url": "https://download-fallback.gnome.org/sources/libdazzle/3.44/libdazzle-3.44.0.tar.xz",
-            "sha256": "3cd3e45eb6e2680cb05d52e1e80dd8f9d59d4765212f0e28f78e6c1783d18eae"
+            "url": "https://download.gnome.org/sources/libdazzle/3.44/libdazzle-3.44.0.tar.xz",
+            "sha256": "3cd3e45eb6e2680cb05d52e1e80dd8f9d59d4765212f0e28f78e6c1783d18eae",
+            "x-checker-data": {
+                "type": "gnome",
+                "name": "libdazzle"
+            }
           }
         ]
       },
@@ -148,7 +178,13 @@
           {
               "type": "archive",
               "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.41.0.tar.xz",
-              "sha256": "e748bafd424cfe80b212cbc6f1bbccc3a47d4862fb1eb7988877750478568040"
+              "sha256": "e748bafd424cfe80b212cbc6f1bbccc3a47d4862fb1eb7988877750478568040",
+              "x-checker-data": {
+                "type": "anitya",
+                "project-id": 5350,
+                "stable-only": true,
+                "url-template": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-$version.tar.xz"
+            }
           }
         ]
       },
@@ -166,7 +202,11 @@
           {
             "type": "archive",
             "url": "https://download.gnome.org/sources/gitg/41/gitg-41.tar.xz",
-            "sha256": "7fb61b9fb10fbaa548d23d7065babd72ad63e621de55840c065ce6e3986c4629"
+            "sha256": "7fb61b9fb10fbaa548d23d7065babd72ad63e621de55840c065ce6e3986c4629",
+            "x-checker-data": {
+                "type": "gnome",
+                "name": "gitg"
+            }
           },
           {
             "type": "patch",
