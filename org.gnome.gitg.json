@@ -33,20 +33,20 @@
     ],
     "modules": [
         {
-            "name" : "gtksourceview4",
-            "buildsystem" : "meson",
-            "config-opts" : [
+            "name": "gtksourceview4",
+            "buildsystem": "meson",
+            "config-opts": [
                 "-Dinstall_tests=false",
                 "-Dgtk_doc=false"
             ],
-            "sources" : [
+            "sources": [
                 {
-                    "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz",
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz",
                     "sha256": "7ec9d18fb283d1f84a3a3eff3b7a72b09a10c9c006597b3fbabbb5958420a87d"
                 }
             ],
-            "cleanup" : [
+            "cleanup": [
                 "/include",
                 "/lib/pkgconfig"
             ]
@@ -124,7 +124,7 @@
                         "type": "gnome",
                         "name": "libpeas",
                         "versions": {
-                          "<": "1.99"
+                            "<": "1.99"
                         }
                     }
                 }
@@ -138,8 +138,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AbiWord/enchant/releases/download/v2.6.1/enchant-2.6.1.tar.gz",
-                    "sha256": "f24e12469137ae1d03140bb9032a47a5947c36f4d1e2f12b929061005eb15279",
+                    "url": "https://github.com/AbiWord/enchant/releases/download/v2.6.2/enchant-2.6.2.tar.gz",
+                    "sha256": "6686a728e56e760f8dee09a22f0fb53b46ee9dbe7d64cf9e5bb35a658bff7e1d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6601,
@@ -197,8 +197,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.42.0.tar.xz",
-                    "sha256": "3278210e9fd2994b8484dd7e3ddd9ea8b940ef52170cdb606daa94d887c93b0d",
+                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.43.0.tar.xz",
+                    "sha256": "5446603e73d911781d259e565750dcd277a42836c8e392cac91cf137aa9b76ec",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5350,
