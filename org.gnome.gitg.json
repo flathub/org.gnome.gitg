@@ -138,8 +138,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AbiWord/enchant/releases/download/v2.6.2/enchant-2.6.2.tar.gz",
-                    "sha256": "6686a728e56e760f8dee09a22f0fb53b46ee9dbe7d64cf9e5bb35a658bff7e1d",
+                    "url": "https://github.com/AbiWord/enchant/releases/download/v2.6.3/enchant-2.6.3.tar.gz",
+                    "sha256": "c1c5719f2a597ce3e06c938cfb99fb697da093dea7b857cc004dc1dcf1bba182",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6601,
