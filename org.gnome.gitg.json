@@ -138,8 +138,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AbiWord/enchant/releases/download/v2.6.6/enchant-2.6.6.tar.gz",
-                    "sha256": "ce9b40e22b3ee5e91ca35403487af03896f4deb1134efcf0b1b3ef9764d28295",
+                    "url": "https://github.com/AbiWord/enchant/releases/download/v2.6.7/enchant-2.6.7.tar.gz",
+                    "sha256": "a1c2e5b59acca000bbfb24810af4a1165733d407f2154786588e076c8cd57bfc",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6601,
@@ -197,8 +197,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.43.0.tar.xz",
-                    "sha256": "5446603e73d911781d259e565750dcd277a42836c8e392cac91cf137aa9b76ec",
+                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.43.1.tar.xz",
+                    "sha256": "2234f37b453ff8e4672c21ad40d41cc7393c9a8dcdfe640bec7ac5b5358f30d2",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5350,
