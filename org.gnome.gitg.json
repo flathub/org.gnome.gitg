@@ -78,8 +78,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/libgit2/libgit2/archive/v1.7.2/libgit2-1.7.2.tar.gz",
-                    "sha256": "de384e29d7efc9330c6cdb126ebf88342b5025d920dcb7c645defad85195ea7f",
+                    "url": "https://github.com/libgit2/libgit2/archive/v1.8.1/libgit2-1.8.1.tar.gz",
+                    "sha256": "8c1eaf0cf07cba0e9021920bfba9502140220786ed5d8a8ec6c7ad9174522f8e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1627,
@@ -139,8 +139,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AbiWord/enchant/releases/download/v2.6.7/enchant-2.6.7.tar.gz",
-                    "sha256": "a1c2e5b59acca000bbfb24810af4a1165733d407f2154786588e076c8cd57bfc",
+                    "url": "https://github.com/AbiWord/enchant/releases/download/v2.8.2/enchant-2.8.2.tar.gz",
+                    "sha256": "8f19535adb5577b83b00e02f330fe9b9eb40dd21f19e2899636fc4d3a7696375",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6601,
@@ -198,8 +198,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.45.2.tar.xz",
-                    "sha256": "51bfe87eb1c02fed1484051875365eeab229831d30d0cec5d89a14f9e40e9adb",
+                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.46.0.tar.xz",
+                    "sha256": "7f123462a28b7ca3ebe2607485f7168554c2b10dfc155c7ec46300666ac27f95",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5350,
