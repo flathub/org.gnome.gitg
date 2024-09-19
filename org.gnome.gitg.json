@@ -83,6 +83,7 @@
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1627,
+                        "versions": {"<": "1.8.0"},
                         "url-template": "https://github.com/libgit2/libgit2/archive/v$version/libgit2-$version.tar.gz"
                     }
                 }
