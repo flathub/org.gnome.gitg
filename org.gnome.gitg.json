@@ -56,8 +56,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.libssh2.org/download/libssh2-1.11.0.tar.gz",
-                    "sha256": "3736161e41e2693324deb38c26cfdc3efe6209d634ba4258db1cecff6a5ad461",
+                    "url": "https://www.libssh2.org/download/libssh2-1.11.1.tar.gz",
+                    "sha256": "d9ec76cbe34db98eec3539fe2c899d26b0c837cb3eb466a56b0f109cabf658f7",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1730,
@@ -198,8 +198,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.46.2.tar.xz",
-                    "sha256": "5ee8a1c68536094a4f7f9515edc154b12a275b8a57dda4c21ecfbf1afbae2ca3",
+                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.47.1.tar.xz",
+                    "sha256": "f3d8f9bb23ae392374e91cd9d395970dabc5b9c5ee72f39884613cd84a6ed310",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5350,
