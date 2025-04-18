@@ -101,8 +101,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgit2-glib/1.2/libgit2-glib-1.2.0.tar.xz",
-                    "sha256": "1331dada838f4e1f591b26459d44126a325de762dc3cd26153a31afbdfe18190",
+                    "url": "https://download.gnome.org/sources/libgit2-glib/1.2/libgit2-glib-1.2.1.tar.xz",
+                    "sha256": "97423a779002b3be8751c75f9d79049dfccca3616a26159fc162486772ba785f",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libgit2-glib"
@@ -198,8 +198,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.46.2.tar.xz",
-                    "sha256": "5ee8a1c68536094a4f7f9515edc154b12a275b8a57dda4c21ecfbf1afbae2ca3",
+                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.49.0.tar.xz",
+                    "sha256": "618190cf590b7e9f6c11f91f23b1d267cd98c3ab33b850416d8758f8b5a85628",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5350,
