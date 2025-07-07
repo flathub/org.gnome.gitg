@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.gitg",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "46",
+    "runtime-version": "48",
     "sdk": "org.gnome.Sdk",
     "command": "gitg",
     "finish-args": [
@@ -56,8 +56,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.libssh2.org/download/libssh2-1.11.0.tar.gz",
-                    "sha256": "3736161e41e2693324deb38c26cfdc3efe6209d634ba4258db1cecff6a5ad461",
+                    "url": "https://www.libssh2.org/download/libssh2-1.11.1.tar.gz",
+                    "sha256": "d9ec76cbe34db98eec3539fe2c899d26b0c837cb3eb466a56b0f109cabf658f7",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1730,
@@ -101,8 +101,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgit2-glib/1.2/libgit2-glib-1.2.0.tar.xz",
-                    "sha256": "1331dada838f4e1f591b26459d44126a325de762dc3cd26153a31afbdfe18190",
+                    "url": "https://download.gnome.org/sources/libgit2-glib/1.2/libgit2-glib-1.2.1.tar.xz",
+                    "sha256": "97423a779002b3be8751c75f9d79049dfccca3616a26159fc162486772ba785f",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libgit2-glib"
@@ -142,8 +142,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AbiWord/enchant/releases/download/v2.8.2/enchant-2.8.2.tar.gz",
-                    "sha256": "8f19535adb5577b83b00e02f330fe9b9eb40dd21f19e2899636fc4d3a7696375",
+                    "url": "https://github.com/AbiWord/enchant/releases/download/v2.8.10/enchant-2.8.10.tar.gz",
+                    "sha256": "6db791265ace652c63a6d24f376f4c562b742284d70d3ccb9e1ce8be45b288c9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6601,
@@ -198,8 +198,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.46.2.tar.xz",
-                    "sha256": "5ee8a1c68536094a4f7f9515edc154b12a275b8a57dda4c21ecfbf1afbae2ca3",
+                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.50.0.tar.xz",
+                    "sha256": "dff3c000e400ace3a63b8a6f8b3b76b88ecfdffd4504a04aba4248372cdec045",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5350,
