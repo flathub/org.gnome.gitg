@@ -214,7 +214,7 @@
             "buildsystem": "meson",
             "cleanup": [
                 "/bin/python"
-            ]
+            ],
             "sources": [
                 {
                     "type": "git",
