@@ -234,6 +234,10 @@
                     "commands": [
                         "ln -s /usr/bin/python3 /app/bin/python"
                     ]
+                },
+                {
+                    "type": "patch",
+                    "path": "gitg-meson-patch.patch"
                 }
             ]
         }
