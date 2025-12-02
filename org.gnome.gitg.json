@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.gitg",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "command": "gitg",
     "finish-args": [
@@ -142,8 +142,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AbiWord/enchant/releases/download/v2.8.10/enchant-2.8.10.tar.gz",
-                    "sha256": "6db791265ace652c63a6d24f376f4c562b742284d70d3ccb9e1ce8be45b288c9",
+                    "url": "https://github.com/AbiWord/enchant/releases/download/v2.8.14/enchant-2.8.14.tar.gz",
+                    "sha256": "d04588769399ff7140fa214b9731e6fc6eda9bb2e75df9f67263717710bb4c4b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6601,
@@ -158,8 +158,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gspell/1.14/gspell-1.14.0.tar.xz",
-                    "sha256": "64ea1d8e9edc1c25b45a920e80daf67559d1866ffcd7f8432fecfea6d0fe8897",
+                    "url": "https://download.gnome.org/sources/gspell/1.14/gspell-1.14.2.tar.xz",
+                    "sha256": "4ec7e5accc9013281bacd6bbc00006be733818b81ba3fe332c1e876c7e1e1477",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gspell"
@@ -198,8 +198,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.50.0.tar.xz",
-                    "sha256": "dff3c000e400ace3a63b8a6f8b3b76b88ecfdffd4504a04aba4248372cdec045",
+                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.52.0.tar.xz",
+                    "sha256": "3cd8fee86f69a949cb610fee8cd9264e6873d07fa58411f6060b3d62729ed7c5",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5350,
