@@ -214,30 +214,18 @@
             "buildsystem": "meson",
             "cleanup": [
                 "/bin/python"
-            ],
-            "config-opts": [
-                "--buildtype=debugoptimized",
-                "-Ddeprecations=true"
-            ],
+            ]
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/gitg/44/gitg-44.tar.xz",
-                    "sha256": "342a31684dab9671cd341bd3e3ce665adcee0460c2a081ddc493cdbc03132530",
-                    "x-checker-data": {
-                        "type": "gnome",
-                        "name": "gitg"
-                    }
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/gitg.git",
+                    "commit": "fc2bd589c861ed6c4b8dadc0f7499f586bf6356f"
                 },
                 {
                     "type": "shell",
                     "commands": [
                         "ln -s /usr/bin/python3 /app/bin/python"
                     ]
-                },
-                {
-                    "type": "patch",
-                    "path": "gitg-meson-patch.patch"
                 }
             ]
         }
