@@ -27,9 +27,7 @@
         "/share/pkgconfig",
         "/share/vala",
         "*.a",
-        "*.la",
-        "*.pyc",
-        "__pycache__"
+        "*.la"
     ],
     "modules": [
         {
