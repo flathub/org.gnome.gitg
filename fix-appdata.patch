@@ -1,0 +1,40 @@
+From 5ee003272048b2205ca8b174b8e785ed309f1c5c Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Sabri=20=C3=9Cnal?= <yakushabb@gmail.com>
+Date: Fri, 6 Feb 2026 14:05:22 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+---
+ data/org.gnome.gitg.appdata.xml.in.in | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/data/org.gnome.gitg.appdata.xml.in.in b/data/org.gnome.gitg.appdata.xml.in.in
+index 01ecc77..1597480 100644
+--- a/data/org.gnome.gitg.appdata.xml.in.in
++++ b/data/org.gnome.gitg.appdata.xml.in.in
+@@ -28,19 +28,19 @@
+   </kudos>
+   <screenshots>
+     <screenshot type="default" height="675" width="1200">
+-      <image>https://wiki.gnome.org/Apps/Gitg?action=AttachFile&amp;do=get&amp;target=history.png</image>
++      <image>https://imgproxy.flathub.org/insecure/dpr:2/f:avif/rs:fill-down/aHR0cHM6Ly9kbC5mbGF0aHViLm9yZy9tZWRpYS9vcmcvZ25vbWUvZ2l0Zy84MTY5MGI3MzA5MDc4NjVhNGQ2ZmUxNzVjYTE3M2RjZC9zY3JlZW5zaG90cy9pbWFnZS0xX29yaWcucG5n</image>
+       <caption>Browse repository history</caption>
+     </screenshot>
+     <screenshot height="675" width="1200">
+-      <image>https://wiki.gnome.org/Apps/Gitg?action=AttachFile&amp;do=get&amp;target=stage.png</image>
++      <image>https://imgproxy.flathub.org/insecure/dpr:2/f:avif/rs:fill-down/aHR0cHM6Ly9kbC5mbGF0aHViLm9yZy9tZWRpYS9vcmcvZ25vbWUvZ2l0Zy84MTY5MGI3MzA5MDc4NjVhNGQ2ZmUxNzVjYTE3M2RjZC9zY3JlZW5zaG90cy9pbWFnZS0yX29yaWcucG5n</image>
+       <caption>Staging area to compose your commit</caption>
+     </screenshot>
+     <screenshot height="675" width="1200">
+-      <image>https://wiki.gnome.org/Apps/Gitg?action=AttachFile&amp;do=get&amp;target=commit.png</image>
++      <image>https://imgproxy.flathub.org/insecure/dpr:2/f:avif/rs:fill-down/aHR0cHM6Ly9kbC5mbGF0aHViLm9yZy9tZWRpYS9vcmcvZ25vbWUvZ2l0Zy84MTY5MGI3MzA5MDc4NjVhNGQ2ZmUxNzVjYTE3M2RjZC9zY3JlZW5zaG90cy9pbWFnZS0zX29yaWcucG5n</image>
+       <caption>Commit staged changes</caption>
+     </screenshot>
+     <screenshot height="675" width="1200">
+-      <image>https://wiki.gnome.org/Apps/Gitg?action=AttachFile&amp;do=get&amp;target=projects.png</image>
++      <image>https://imgproxy.flathub.org/insecure/dpr:2/f:avif/rs:fill-down/aHR0cHM6Ly9kbC5mbGF0aHViLm9yZy9tZWRpYS9vcmcvZ25vbWUvZ2l0Zy84MTY5MGI3MzA5MDc4NjVhNGQ2ZmUxNzVjYTE3M2RjZC9zY3JlZW5zaG90cy9pbWFnZS00X29yaWcucG5n</image>
+       <caption>Overview of recently used repositories</caption>
+     </screenshot>
+   </screenshots>
+-- 
+2.53.0
+
