@@ -56,8 +56,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.libssh2.org/download/libssh2-1.11.0.tar.gz",
-                    "sha256": "3736161e41e2693324deb38c26cfdc3efe6209d634ba4258db1cecff6a5ad461",
+                    "url": "https://www.libssh2.org/download/libssh2-1.11.1.tar.gz",
+                    "sha256": "d9ec76cbe34db98eec3539fe2c899d26b0c837cb3eb466a56b0f109cabf658f7",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "anitya",
@@ -102,8 +102,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgit2-glib/1.2/libgit2-glib-1.2.0.tar.xz",
-                    "sha256": "1331dada838f4e1f591b26459d44126a325de762dc3cd26153a31afbdfe18190",
+                    "url": "https://download.gnome.org/sources/libgit2-glib/1.2/libgit2-glib-1.2.1.tar.xz",
+                    "sha256": "97423a779002b3be8751c75f9d79049dfccca3616a26159fc162486772ba785f",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libgit2-glib"
@@ -123,8 +123,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libpeas/1.36/libpeas-1.36.0.tar.xz",
-                    "sha256": "297cb9c2cccd8e8617623d1a3e8415b4530b8e5a893e3527bbfd1edd13237b4c",
+                    "url": "https://download.gnome.org/sources/libpeas/1.38/libpeas-1.38.1.tar.xz",
+                    "sha256": "e82fd328adcac1aba34b64136bdfcbbacf2b3258a8bc4e5f480a72502a611ae9",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libpeas",
@@ -143,8 +143,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AbiWord/enchant/releases/download/v2.8.2/enchant-2.8.2.tar.gz",
-                    "sha256": "8f19535adb5577b83b00e02f330fe9b9eb40dd21f19e2899636fc4d3a7696375",
+                    "url": "https://github.com/AbiWord/enchant/releases/download/v2.8.14/enchant-2.8.14.tar.gz",
+                    "sha256": "d04588769399ff7140fa214b9731e6fc6eda9bb2e75df9f67263717710bb4c4b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6601,
@@ -159,8 +159,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gspell/1.14/gspell-1.14.0.tar.xz",
-                    "sha256": "64ea1d8e9edc1c25b45a920e80daf67559d1866ffcd7f8432fecfea6d0fe8897",
+                    "url": "https://download.gnome.org/sources/gspell/1.14/gspell-1.14.2.tar.xz",
+                    "sha256": "4ec7e5accc9013281bacd6bbc00006be733818b81ba3fe332c1e876c7e1e1477",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gspell"
