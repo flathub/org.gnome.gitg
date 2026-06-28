@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.gitg",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "46",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "command": "gitg",
     "finish-args": [
@@ -56,8 +56,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.libssh2.org/download/libssh2-1.11.0.tar.gz",
-                    "sha256": "3736161e41e2693324deb38c26cfdc3efe6209d634ba4258db1cecff6a5ad461",
+                    "url": "https://www.libssh2.org/download/libssh2-1.11.1.tar.gz",
+                    "sha256": "d9ec76cbe34db98eec3539fe2c899d26b0c837cb3eb466a56b0f109cabf658f7",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1730,
@@ -101,8 +101,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgit2-glib/1.2/libgit2-glib-1.2.0.tar.xz",
-                    "sha256": "1331dada838f4e1f591b26459d44126a325de762dc3cd26153a31afbdfe18190",
+                    "url": "https://download.gnome.org/sources/libgit2-glib/1.2/libgit2-glib-1.2.1.tar.xz",
+                    "sha256": "97423a779002b3be8751c75f9d79049dfccca3616a26159fc162486772ba785f",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libgit2-glib"
@@ -122,8 +122,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libpeas/1.36/libpeas-1.36.0.tar.xz",
-                    "sha256": "297cb9c2cccd8e8617623d1a3e8415b4530b8e5a893e3527bbfd1edd13237b4c",
+                    "url": "https://download.gnome.org/sources/libpeas/1.38/libpeas-1.38.1.tar.xz",
+                    "sha256": "e82fd328adcac1aba34b64136bdfcbbacf2b3258a8bc4e5f480a72502a611ae9",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libpeas",
@@ -142,8 +142,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AbiWord/enchant/releases/download/v2.8.2/enchant-2.8.2.tar.gz",
-                    "sha256": "8f19535adb5577b83b00e02f330fe9b9eb40dd21f19e2899636fc4d3a7696375",
+                    "url": "https://github.com/AbiWord/enchant/releases/download/v2.8.16/enchant-2.8.16.tar.gz",
+                    "sha256": "d73162b5eff401a6397e1215e2b103bcef83f921c396c7f6b1394d2450d124e2",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6601,
@@ -158,8 +158,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gspell/1.14/gspell-1.14.0.tar.xz",
-                    "sha256": "64ea1d8e9edc1c25b45a920e80daf67559d1866ffcd7f8432fecfea6d0fe8897",
+                    "url": "https://download.gnome.org/sources/gspell/1.14/gspell-1.14.4.tar.xz",
+                    "sha256": "e73a89d68c70f8748aefb6b0f5cfdfec3ff173cf4449837fd6cb17d1e9fcf486",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gspell"
@@ -168,21 +168,6 @@
             ],
             "cleanup": [
                 "/bin"
-            ]
-        },
-        {
-            "name": "libdazzle",
-            "buildsystem": "meson",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/libdazzle/3.44/libdazzle-3.44.0.tar.xz",
-                    "sha256": "3cd3e45eb6e2680cb05d52e1e80dd8f9d59d4765212f0e28f78e6c1783d18eae",
-                    "x-checker-data": {
-                        "type": "gnome",
-                        "name": "libdazzle"
-                    }
-                }
             ]
         },
         {
@@ -198,8 +183,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.46.2.tar.xz",
-                    "sha256": "5ee8a1c68536094a4f7f9515edc154b12a275b8a57dda4c21ecfbf1afbae2ca3",
+                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.54.0.tar.xz",
+                    "sha256": "f689162364c10de79ef89aa8dbf48731eb057e34edbbd20aca510ce0154681a3",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5350,
@@ -232,7 +217,14 @@
                 },
                 {
                     "type": "patch",
-                    "path": "fix-appdata.patch"
+                    "paths": [
+                        "patches/0001-Remove-libdazzle-dependency.patch",
+                        "patches/0002-fix-format-not-string-literal.patch",
+                        "patches/0003-error-format-expects-argument-type.patch",
+                        "patches/0004-fix-zero-length-printf-format-string.patch",
+                        "patches/0005-libpeas-1.38.patch",
+                        "patches/0009-fix-appdata.patch"
+                    ]
                 },
                 {
                     "type": "shell",
