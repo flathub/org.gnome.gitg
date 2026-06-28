@@ -1,0 +1,29 @@
+From 288034a7b8d766457715586974d9e6cb461d78a3 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Sun, 28 Jun 2026 22:33:45 +0300
+Subject: [PATCH] Fix `zero-length gnu_printf format string` error
+
+> error: zero-length gnu_printf format string [-Werror=format-zero-length]
+> var dlg = new Gtk.MessageDialog(this,
+
+Signed-off-by: Sabri Ünal <yakushabb@gmail.com>
+---
+ gitg/gitg-window.vala | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/gitg/gitg-window.vala b/gitg/gitg-window.vala
+index f77a7f5..44274e6 100644
+--- a/gitg/gitg-window.vala
++++ b/gitg/gitg-window.vala
+@@ -1118,7 +1118,7 @@ public class Window : Gtk.ApplicationWindow, GitgExt.Application, Initable
+ 		                                Gtk.DialogFlags.MODAL,
+ 		                                query.message_type,
+ 		                                Gtk.ButtonsType.NONE,
+-		                                "");
++		                                "%s", "");
+ 
+ 		var primary = "<b>%s</b>".printf(Markup.escape_text(query.title));
+ 		dlg.set_markup(primary);
+--
+libgit2 1.7.2
+
