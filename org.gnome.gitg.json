@@ -222,6 +222,10 @@
                     "commit": "fc2bd589c861ed6c4b8dadc0f7499f586bf6356f"
                 },
                 {
+                    "type": "patch",
+                    "path": "fix-appdata.patch"
+                },
+                {
                     "type": "shell",
                     "commands": [
                         "ln -s /usr/bin/python3 /app/bin/python"
