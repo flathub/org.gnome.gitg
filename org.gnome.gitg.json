@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.gitg",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "command": "gitg",
     "finish-args": [
@@ -122,8 +122,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libpeas/1.36/libpeas-1.36.0.tar.xz",
-                    "sha256": "297cb9c2cccd8e8617623d1a3e8415b4530b8e5a893e3527bbfd1edd13237b4c",
+                    "url": "https://download.gnome.org/sources/libpeas/1.38/libpeas-1.38.1.tar.xz",
+                    "sha256": "e82fd328adcac1aba34b64136bdfcbbacf2b3258a8bc4e5f480a72502a611ae9",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libpeas",
@@ -142,8 +142,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AbiWord/enchant/releases/download/v2.8.14/enchant-2.8.14.tar.gz",
-                    "sha256": "d04588769399ff7140fa214b9731e6fc6eda9bb2e75df9f67263717710bb4c4b",
+                    "url": "https://github.com/AbiWord/enchant/releases/download/v2.8.16/enchant-2.8.16.tar.gz",
+                    "sha256": "d73162b5eff401a6397e1215e2b103bcef83f921c396c7f6b1394d2450d124e2",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6601,
@@ -158,8 +158,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gspell/1.14/gspell-1.14.2.tar.xz",
-                    "sha256": "4ec7e5accc9013281bacd6bbc00006be733818b81ba3fe332c1e876c7e1e1477",
+                    "url": "https://download.gnome.org/sources/gspell/1.14/gspell-1.14.4.tar.xz",
+                    "sha256": "e73a89d68c70f8748aefb6b0f5cfdfec3ff173cf4449837fd6cb17d1e9fcf486",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gspell"
@@ -198,8 +198,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.52.0.tar.xz",
-                    "sha256": "3cd8fee86f69a949cb610fee8cd9264e6873d07fa58411f6060b3d62729ed7c5",
+                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.54.0.tar.xz",
+                    "sha256": "f689162364c10de79ef89aa8dbf48731eb057e34edbbd20aca510ce0154681a3",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5350,
