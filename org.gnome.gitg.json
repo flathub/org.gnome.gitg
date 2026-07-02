@@ -142,8 +142,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AbiWord/enchant/releases/download/v2.8.16/enchant-2.8.16.tar.gz",
-                    "sha256": "d73162b5eff401a6397e1215e2b103bcef83f921c396c7f6b1394d2450d124e2",
+                    "url": "https://github.com/AbiWord/enchant/releases/download/v2.8.17/enchant-2.8.17.tar.gz",
+                    "sha256": "ee40256e271d0bc1f212ecbc8b8d3da9066b33c9ca987d266759665eb0ca694d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6601,
@@ -173,18 +173,22 @@
         {
             "name": "git",
             "make-args": [
-                "NO_TCLTK=1",
-                "INSTALL_SYMLINKS=1"
+                "INSTALL_SYMLINKS=1",
+                "NO_PERL=YesPlease",
+                "NO_RUST=YesPlease",
+                "NO_TCLTK=YesPlease"
             ],
             "make-install-args": [
-                "NO_TCLTK=1",
-                "INSTALL_SYMLINKS=1"
+                "INSTALL_SYMLINKS=1",
+                "NO_PERL=YesPlease",
+                "NO_RUST=YesPlease",
+                "NO_TCLTK=YesPlease"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.54.0.tar.xz",
-                    "sha256": "f689162364c10de79ef89aa8dbf48731eb057e34edbbd20aca510ce0154681a3",
+                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.55.0.tar.xz",
+                    "sha256": "457fdb04dc8728e007d4688695e6912e6f680727920f2a40bf11eacc17505357",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5350,
@@ -207,8 +211,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gitg/44/gitg-44.tar.xz",
-                    "sha256": "342a31684dab9671cd341bd3e3ce665adcee0460c2a081ddc493cdbc03132530",
+                    "url": "https://download.gnome.org/sources/gitg/50/gitg-50.tar.xz",
+                    "sha256": "331216a86920cd4e8ab9b0036e63cecb3e1a1d1162c61aa31bd6924e985a8154",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "gnome",
@@ -217,14 +221,7 @@
                 },
                 {
                     "type": "patch",
-                    "paths": [
-                        "patches/0001-Remove-libdazzle-dependency.patch",
-                        "patches/0002-fix-format-not-string-literal.patch",
-                        "patches/0003-error-format-expects-argument-type.patch",
-                        "patches/0004-fix-zero-length-printf-format-string.patch",
-                        "patches/0005-libpeas-1.38.patch",
-                        "patches/0009-fix-appdata.patch"
-                    ]
+                    "path": "patches/0005-libpeas-1.38.patch"
                 },
                 {
                     "type": "shell",
