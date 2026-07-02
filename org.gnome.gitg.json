@@ -45,10 +45,6 @@
                     "url": "https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz",
                     "sha256": "7ec9d18fb283d1f84a3a3eff3b7a72b09a10c9c006597b3fbabbb5958420a87d"
                 }
-            ],
-            "cleanup": [
-                "/include",
-                "/lib/pkgconfig"
             ]
         },
         {
@@ -113,12 +109,12 @@
         "shared-modules/intltool/intltool-0.51.json",
         {
             "name": "libpeas",
+            "buildsystem": "meson",
+            "builddir": true,
             "cleanup": [
                 "/bin/*",
                 "/lib/peas-demo"
             ],
-            "buildsystem": "meson",
-            "builddir": true,
             "sources": [
                 {
                     "type": "archive",
@@ -155,6 +151,9 @@
         {
             "name": "gspell",
             "buildsystem": "meson",
+            "cleanup": [
+                "/bin"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -165,9 +164,6 @@
                         "name": "gspell"
                     }
                 }
-            ],
-            "cleanup": [
-                "/bin"
             ]
         },
         {
@@ -201,12 +197,12 @@
         {
             "name": "gitg",
             "buildsystem": "meson",
-            "cleanup": [
-                "/bin/python"
-            ],
             "config-opts": [
                 "--buildtype=debugoptimized",
                 "-Ddeprecations=true"
+            ],
+            "cleanup": [
+                "/bin/python"
             ],
             "sources": [
                 {
